@@ -23,9 +23,6 @@ form.addEventListener('submit',e=>{
 
     //show result on page
     scrollTo(0,0);// take us to the top of the page to show score.
-    
-    result.classList.remove('d-none');// the result section is shown on screen.
-    
     let output=0;
     // after every 10milliseconds the output will increase until it reaches the score value creating a better animation effect to display score.
     const timer=setInterval(() => {
@@ -34,19 +31,22 @@ form.addEventListener('submit',e=>{
     else output++;
     }, 10);
     if(score===25){
+        result.classList.remove('d-none');// the result section is shown on screen.
         emoji.textContent="😒😒😒";
     }
     else if(score===50){
+        result.classList.remove('d-none');// the result section is shown on screen.
         emoji.textContent="😐😐😐";
     }
     else if(score===75){
+        result.classList.remove('d-none');// the result section is shown on screen.
         emoji.textContent="😊😊😊";
     }
     else if(score===100){
-        retry.style.display="none";
         popup.style.display="block";  
     }
     else{
+        result.classList.remove('d-none');// the result section is shown on screen.
         emoji.textContent="😫😫🤐😓😞";
     }
 })  
@@ -68,7 +68,6 @@ close[1].addEventListener("click",()=>{
 })
 
 popup.addEventListener("click",()=>{
-    popup.style.display="none";
     location.reload();
 })
 
