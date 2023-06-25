@@ -35,7 +35,7 @@ input[type=radio] {
     max-width: 300px;
     margin:10% auto;
     padding: 20px;
-    background: white;
+    background: rgb(219, 69, 69);
     position: relative;
     border: 2px solid black;
 }
